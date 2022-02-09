@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "./Button";
+import { Button } from "../Button/Button.component";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { Link as LinkScroll } from "react-scroll";
 
 library.add(fab, faLaptopCode);
 
@@ -48,32 +49,31 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/services"
+              <LinkScroll
+                to="projects"
                 className="nav-links"
                 onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                // onSetActive={this.handleSetActive}
               >
                 PROJECTS
-              </Link>
+              </LinkScroll>
             </li>
             <li className="nav-item">
-              <Link
-                to="/products"
+              <LinkScroll
+                to="contact"
                 className="nav-links"
                 onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={50}
               >
                 CONTACT
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/sign-up"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                DOWNLOAD CV
-              </Link>
+              </LinkScroll>
             </li>
           </ul>
           {button && <Button buttonStyle="btn--outline"> DOWNLOAD CV </Button>}

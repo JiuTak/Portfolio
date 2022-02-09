@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
+import { Button } from "../Button/Button.component";
 import "./Footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,8 +8,8 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
-    <div className="footer-container">
-      <section className="footer-subscription">
+    <div className="footer-container" id="contact">
+      {/* <section className="footer-subscription">
         <p className="footer-subscription-heading">
           Join the Adventure newsletter to receive our best vacation deals
         </p>
@@ -27,9 +27,9 @@ function Footer() {
             <Button buttonStyle="btn--outline">Subscribe</Button>
           </form>
         </div>
-      </section>
+      </section> */}
       <div class="footer-links">
-        <div className="footer-link-wrapper">
+        {/* <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
             <Link to="/sign-up">How it works</Link>
@@ -45,8 +45,8 @@ function Footer() {
             <Link to="/">Destinations</Link>
             <Link to="/">Sponsorships</Link>
           </div>
-        </div>
-        <div className="footer-link-wrapper">
+        </div> */}
+        {/* <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Videos</h2>
             <Link to="/">Submit Video</Link>
@@ -61,7 +61,7 @@ function Footer() {
             <Link to="/">Youtube</Link>
             <Link to="/">Twitter</Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
@@ -73,46 +73,30 @@ function Footer() {
           </div>
           <small class="website-rights">Jiu Tak © 2022</small>
           <div class="social-icons">
-            <Link
-              class="social-icon-link facebook"
-              to="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <i class="fab fa-facebook-f" />
-            </Link>
-            <Link
+            <a
               class="social-icon-link instagram"
-              to="/"
+              href="https://www.instagram.com/bambijiu/"
               target="_blank"
               aria-label="Instagram"
             >
               <i class="fab fa-instagram" />
-            </Link>
-            <Link
-              class="social-icon-link youtube"
-              to="/"
+            </a>
+            <a
+              class="social-icon-link github"
+              href="https://github.com/jiutak"
               target="_blank"
-              aria-label="Youtube"
+              aria-label="Github"
             >
-              <i class="fab fa-youtube" />
-            </Link>
-            <Link
+              <i class="fab fa-github" />
+            </a>
+            <a
               class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="/"
+              href="https://www.linkedin.com/in/jiu-tak-a0350912a/"
               target="_blank"
               aria-label="LinkedIn"
             >
               <i class="fab fa-linkedin" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #242424;
-    padding: 4rem 0 2rem 0;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,12 +44,12 @@
     border: 1px solid #fff;
   }
   
-  .footer-links {
+  /* .footer-links {
     width: 100%;
     max-width: 1000px;
     display: flex;
     justify-content: center;
-  }
+  } */
   
   .footer-link-wrapper {
     display: flex;

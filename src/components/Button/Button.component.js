@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import JiusCV from "../../resources/pdfs/Jiu Tak.pdf"
 import { Link } from "react-router-dom";
 
 const STYLES = ["btn--primary", "btn--outline", "btn--test"];
@@ -20,14 +21,14 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to="/sign-up" className="btn-mobile">
+    <a href={JiusCV} download className="btn-mobile">
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
+        // onClick={onClick}
         type={type}
       >
         {children}
       </button>
-    </Link>
+    </a>
   );
 };
