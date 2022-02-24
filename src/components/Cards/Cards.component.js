@@ -5,6 +5,7 @@ import WeatherApp from "../../resources/images/weatherApp.png";
 import MealSharingApp from "../../resources/images/mealsharingApp.png";
 import Fastpresser from "../../resources/images/fastpresser.png";
 import TodoList from "../../resources/images/todolistApp.png";
+import PokemonApp from "../../resources/images/pokemonApp.png";
 
 function Cards() {
   return (
@@ -24,6 +25,12 @@ function Cards() {
               text="Meal sharing app with RESTful API"
               label="React with RESTful API"
               href="https://hyf-cph-meal-sharing.herokuapp.com/"
+            />
+            <CardItem
+              src={PokemonApp}
+              text="Fetching Pokemons data from Pokemon API"
+              label="Play with API using React"
+              href="https://jiu-pokemon.netlify.app"
             />
           </ul>
           <ul className="cards__items">
